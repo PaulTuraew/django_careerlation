@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+from secret_settings import *
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,6 +26,8 @@ SECRET_KEY = 'ow%sz7^etuwwegee0+rrw6mk=@hu(-m3)#$w$l!q0cdl9e7-27'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+#hiding
 
 ALLOWED_HOSTS = []
 
@@ -74,14 +78,6 @@ WSGI_APPLICATION = 'careerlation.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'careerlation_db',
-        'USER': 'root',
-        'PASSWORD': 'UltraInstinct18?',
-    }
-}
 
 
 # Password validation
