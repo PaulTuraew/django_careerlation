@@ -22,8 +22,20 @@ from careerlationapp import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
-    #localhost/index
-    url(r'^index/',
-       views.index),
+    #localhost/index --> show the index function in views
+    #url(r'^index/',
+     #  views.index, name='index'),
+    
+    #localhost/nothing in URL ---> show the home function in views
+    url(r'^$', views.home, name='home'),
+    
+    #localhost/about
+    url(r'^about', views.about, name='about'),
+    
+    #localhost/thesis
+    url(r'^thesis', views.thesis, name='thesis'),
+    
+    #localhost/get-involved
+    url(r'^get-involved', views.get_involved, name='get-involved'),
     
 ]
